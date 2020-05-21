@@ -1,7 +1,7 @@
 # Site settings
 title: 虾写
 SEOTitle: 奥特虾的博客
-header-img: img/post-bg-desk.jpg
+header-img: img/tag-bg-o.jpg
 email: ultraxia@foxmail.com
 description: "不积跬步无以至千里，不读源码不足以精通"
 keyword: "奥特虾的博客, Fuchengchao, 傅成超, Python, Golang, OpenStack"
@@ -93,9 +93,17 @@ service-worker: true
 
 
 # Friends
-friends: [
+友情链接: [
    {
         title: "简书·BY",
         href: "http://www.jianshu.com/u/e71990ada2fd"
+    },
+   
+   {   title: "Lenovo 李家旺",
+        href: https://www.lijiawang.org/
+    },
+   {   title: "PKU 徐诗瑶",
+        href: https://www.xusy2333.cn/
     }
+    
 ]
