@@ -58,8 +58,8 @@ kramdown:
 # Gitalk
 gitalk:
   enable: true    #是否开启Gitalk评论
-  clientID: e7a8e3ea5b3ca695a981                            #生成的clientID
-  clientSecret: 4fa043b2b52404151ec7c9f2f80a316296148d81    #生成的clientSecret
+  clientID: af90cec7251e2ea04a1a                            #生成的clientID
+  clientSecret: 099ba55d1579efc8bd03f9e648adb372d22606d5    #生成的clientSecret
   repo: ultraxia.github.io    #仓库名称
   owner: ultraxia    #github用户名
   admin: ultraxia
