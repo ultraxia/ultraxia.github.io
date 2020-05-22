@@ -1,20 +1,20 @@
 ---
 layout:     post
-title:      Hello World
-subtitle:    "\"Hello 虾写\""
-date:       2020-05-21
+title:      OpenStack实现GPU与CPU、内存的NUMA绑定
+subtitle:    "\"这也太难了吧\""
+date:       2020-05-22
 author:     奥特虾
-header-img: img/post-bg-2015.jpg
+header-img: img/post-bg-cloud.jpg
 catalog: true
 tags:
-    - 生活
+    - OpenStack
 ---
 
-> “🙉🙉🙉 ”
+> “负责安卓云开发的小彭请了很久的假，这个需求有点紧，你来做吧 ”
 
 
 
-## 正文
+## 前言
 
 2020.05.21，多么棒的一个日子，空气中弥漫着甜蜜的味道，街边的情侣们...
 
@@ -29,8 +29,11 @@ tags:
 哦哦，好像这个开源的框架没有这个功能，那就...把“点赞”打到公屏上？
 
 <p id = "build"></p>
----
+## 正文
 
 
+## 后记
+
+最后，非常感谢我的同事们在此过程中对我的指点与帮助，正是他们不厌其烦地为我解答问题，我才得以在短时间内实现这个需求，真的非常感谢。
 
 
