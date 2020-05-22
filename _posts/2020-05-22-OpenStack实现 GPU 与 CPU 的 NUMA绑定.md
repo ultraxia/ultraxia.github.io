@@ -141,7 +141,7 @@ CPU和内存绑定到同一个 NUMA 不算复杂，Libvirt 有对应的命令可
 
 
 
-cell_id 其实就是 NUMA id，这里设为和 GPU device 对应的 NUMA id 即可，其他的参数，根据当前虚拟机的flavor填写即可。
+cell_id 其实就是 NUMA id，这里设为和 GPU device 对应的 NUMA id 即可，其他的参数，根据当前虚拟机的 flavor 填写即可。
 
 
 
