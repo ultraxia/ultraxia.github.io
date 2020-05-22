@@ -116,11 +116,11 @@ CPU和内存绑定到同一个 NUMA 不算复杂，Libvirt 有对应的命令可
 
 
 
-这部分的代码写的很清楚，如果` guest_cpu_numa_config `不存在，即用户没有配置 NUMA 信息，则系统会自动为它分配一个默认值，显然这是我们不愿看到的，我们希望自己去配置 NUMA 的信息，即代码走到 else 的分支里，想要走到 else 分支，则必须满足两个条件，`topology `和` guest_cpu_numa_config `不为空值。
+这部分的代码写的很清楚，如果 `guest_cpu_numa_config` 不存在，即用户没有配置 NUMA 信息，则系统会自动为它分配一个默认值，显然这是我们不愿看到的，我们希望自己去配置 NUMA 的信息，即代码走到 else 的分支里，想要走到 else 分支，则必须满足两个条件，`topology` 和` guest_cpu_numa_config` 不为空值。
 
 
 
-这里播报一个小插曲，在我调试的过程中，`topology `始终为 None，这意味着我的机器不支持 NUMA，然而这显然是不可能的，到底是哪里出了问题，没办法，继续啃源码吧，点进 `self._get_host_numa_topology `函数后，会发现有一个函数会去检查你的机器是否支持 NUMA，注意看 `support_matrix`，这里定义了硬件的架构，在初始的源码中只有 `arch.I686 `和` arch.X86_64` 这两个值，然而通过 virsh 命令发现，我的机器是 `AARCH64` 架构的，自己填上，解决。
+这里播报一个小插曲，在我调试的过程中，`topology` 始终为 None，这意味着我的机器不支持 NUMA，然而这显然是不可能的，到底是哪里出了问题，没办法，继续啃源码吧，点进 `self._get_host_numa_topology` 函数后，会发现有一个函数会去检查你的机器是否支持 NUMA，注意看  `support_matrix`，这里定义了硬件的架构，在初始的源码中只有 `arch.I686` 和 `arch.X86_64` 这两个值，然而通过 virsh 命令发现，我的机器是 `AARCH64` 架构的，自己填上，解决。
 
 
 
@@ -128,7 +128,7 @@ CPU和内存绑定到同一个 NUMA 不算复杂，Libvirt 有对应的命令可
 
 
 
-那么第二个问题来了，`guest_cpu_numa_config `是 None 怎么办，可以从之前的代码中看到，`guest_cpu_numa_config `是向某个函数传递了` instance_numa_topology `后解析出来的，搞清楚先有鸡还是先有蛋后，问题就迎刃而解了。`instance_numa_topology ` 依旧是一个空值，那有句话怎么说来着....没有枪没有炮，那就自己写吧。
+那么第二个问题来了，`guest_cpu_numa_config` 是 None 怎么办，可以从之前的代码中看到，`guest_cpu_numa_config` 是向某个函数传递了 `instance_numa_topology`后解析出来的，搞清楚先有鸡还是先有蛋后，问题就迎刃而解了。`instance_numa_topology`  依旧是一个空值，那有句话怎么说来着....没有枪没有炮，那就自己写吧。
 
 
 
