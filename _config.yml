@@ -94,16 +94,20 @@ service-worker: true
 
 # Friends
 friends: [
-   {
+  {
         title: "简书·BY",
         href: "http://www.jianshu.com/u/e71990ada2fd"
     },
    
-   {   title: "Lenovo 李家旺",
+  {     title: "Lenovo 李家旺",
         href: "https://www.lijiawang.org/"
     },
-   {   title: "PKU 徐诗瑶",
+  {     title: "PKU 徐诗瑶",
         href: "http://xusy2333.cn/"
-    }
+    },
+  {
+        title: "TUD 葡萄园",
+        href: "http://www.skylove.club"
+   }
     
 ]
