@@ -157,7 +157,7 @@ cell_id 其实就是 NUMA id，这里设为和 GPU device 对应的 NUMA id 即�
 
 
 
-BTW，我创建的虚拟机有2个 core，分别落在了物理 GPU 的 0-127 上，在我的机器中，0-127是 NUMA0 的势力范围。
+BTW，我创建的虚拟机有2个 core，分别落在了物理 CPU 的 0-127 上，在我的机器中，0-127 是 NUMA0 的势力范围。
 
 
 
