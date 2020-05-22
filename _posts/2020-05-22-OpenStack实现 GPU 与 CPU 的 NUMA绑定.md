@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      OpenStack实现GPU与CPU、内存的NUMA绑定
+title:      OpenStack 实现 GPU 与 CPU、内存的 NUMA 绑定
 subtitle:    "\"这也太难了吧\""
 date:       2020-05-22
 author:     奥特虾
