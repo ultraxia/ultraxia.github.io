@@ -5,7 +5,7 @@ subtitle:    "\"这也太难了吧\""
 date:       2020-05-22
 author:     奥特虾
 header-img: img/post-bg-cloud.jpg
-catalog: true
+catalog: false
 tags:
     - OpenStack
 ---
