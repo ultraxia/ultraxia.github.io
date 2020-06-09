@@ -4,7 +4,7 @@ title:      OpenStack 实现 SPICE 加密访问
 subtitle:    ""
 date:       2020-06-09
 author:     奥特虾
-header-img: img/post-bg-security.jpg
+header-img: img/post-bg1-security.jpg
 catalog: false
 tags:
     - OpenStack
