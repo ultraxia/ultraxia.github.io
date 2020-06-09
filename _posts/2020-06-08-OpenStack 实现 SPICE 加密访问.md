@@ -215,7 +215,7 @@ nova --debug boot \
 
 
 
-![](https://wx1.sinaimg.cn/mw1024/d1797d2fgy1gfk2ccz5o3j215y0u0afs.jpg)
+![](https://s1.ax1x.com/2020/06/09/t4fZlQ.jpg)
 
 
 
