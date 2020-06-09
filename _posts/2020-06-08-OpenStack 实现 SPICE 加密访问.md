@@ -42,7 +42,7 @@ tags:
 
 ### 设置 OpenStack 支持 SPICE 协议
 
-OpenStack 默认采用 VNC 作为远程桌面协议浅析，既然需求是在 SPICE 协议的基础上实现加密，那么第一步就是得让 OpenStack  支持 SPICE 协议了，这一点其实很容易实现。
+OpenStack 默认采用 VNC 作为远程桌面协议，既然需求是在 SPICE 协议的基础上实现加密，那么第一步就是得让 OpenStack  支持 SPICE 协议了，这一点其实很容易实现。
 
 
 
